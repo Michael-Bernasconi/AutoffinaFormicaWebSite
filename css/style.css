@@ -121,7 +121,7 @@ header h1 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   max-width: 1200px;
-  margin: -50px auto 50px;
+  margin: 50px auto 50px;
   padding: 0 20px;
 }
 
@@ -186,6 +186,26 @@ h2 {
   align-items: center;
   margin-right: 20px;
   font-size: 1.4rem;
+}
+/* Contenitore principale per dare respiro */
+.info-section-full {
+  max-width: 1100px; /* Impedisce al testo di allargarsi troppo */
+  margin: 60px auto; /* Centra il blocco e dà spazio sopra/sotto */
+  padding: 0 20px; /* Evita che il testo tocchi i bordi sui cellulari */
+}
+
+.storia-centrata {
+  margin-bottom: 50px;
+  line-height: 1.8; /* Aumenta l'interlinea per leggere meglio */
+}
+
+.storia-centrata p {
+  margin-bottom: 20px; /* Distanzia i paragrafi tra loro */
+}
+.titolo-servizi-centrato {
+  text-align: center;
+  margin: 80px 0 40px 0; /* Aumenta lo spazio sopra (80px) */
+  border-left: none; /* Se lo vuoi centrato, meglio togliere il bordo laterale */
 }
 
 /* TABELLA ORARI */
