@@ -13,9 +13,7 @@
   <body>
     <header>
       <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
 
       <nav id="side-menu" class="nav-menu">
@@ -27,128 +25,161 @@
         <a href="Recensioni.html">Recensioni</a>
       </nav>
 
-      <img src="img/logo.png" alt="Logo Autofficina Formica" class="logo" />
+      <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
       <h1>Chi Siamo</h1>
-      <p class="descrizione">
-        La nostra storia, la nostra passione e l'impegno di ogni giorno.
+      <p
+        style="
+          color: var(--primary);
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        "
+      >
+        Passione e Competenza dal 1984
       </p>
     </header>
 
     <main>
-      <section class="hero-image-chisiamo">
-        <div class="hero-content">
-          <h2>Oltre 40 Anni di Passione e Competenza</h2>
-          <p>La tua fiducia, il nostro motore principale.</p>
+      <section
+        class="hero"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.8)
+            ),
+            url(img/chisiamo.jpg);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        "
+      >
+        <div class="hero-content-chisiamo">
+          <h2
+            style="
+              border: none;
+              color: white;
+              font-size: 3rem;
+              font-weight: 900;
+              text-transform: uppercase;
+            "
+          >
+            Oltre 40 Anni di Esperienza
+          </h2>
+          <p
+            style="
+              color: var(--primary);
+              font-weight: bold;
+              font-size: 1.2rem;
+              text-transform: uppercase;
+            "
+          >
+            La nostra storia, il tuo motore.
+          </p>
         </div>
       </section>
 
-      <div class="layout-semplice">
-        <section class="sezione-testo storia-officina">
-          <h2>
-            <i class="fas fa-history icona-titolo"></i> Una storia di famiglia e
-            motori
-          </h2>
+      <div class="info-section-full">
+        <section class="storia-centrata">
+          <h2>La Nostra Storia</h2>
           <p>
-            L'<strong>Autofficina Formica</strong> nasce nel
-            <strong>1984</strong> da una profonda passione per la meccanica e il
-            desiderio di offrire un servizio trasparente e di alta qualità agli
-            automobilisti di Olgiate Comasco e provincia. Da oltre 40 anni, la
-            nostra missione è prenderci cura del tuo veicolo come se fosse il
-            nostro.
+            L'<strong>Autofficina Formica</strong> nasce nel 1984 a Olgiate
+            Comasco. Da oltre 40 anni, la nostra missione è prenderci cura del
+            tuo veicolo con trasparenza e competenza tecnica.
           </p>
-          <img
-            src="https://via.placeholder.com/600x300?text=Autofficina+interna"
-            alt="Interno officina storica"
-            class="img-full-width"
-          />
+          <p>
+            Portiamo l'esperienza maturata nel mondo delle competizioni
+            (<strong>FrmRacing</strong>) su ogni vettura stradale, garantendo
+            prestazioni e sicurezza ai massimi livelli.
+          </p>
         </section>
 
-        <section class="sezione-testo tradizione-innovazione">
-          <h2>
-            <i class="fas fa-tools icona-titolo"></i> Tradizione e Innovazione
-          </h2>
-          <p>
-            Quello che era iniziato come un piccolo laboratorio artigianale,
-            oggi è un centro assistenza all'avanguardia. Abbiamo saputo
-            evolverci insieme alla tecnologia: dai motori a carburatore degli
-            anni '80 fino alle moderne diagnosi computerizzate per auto ibride
-            ed elettriche.
-          </p>
-          <div class="card-grid">
-            <div class="card">
-              <i class="fas fa-car icona-card"></i>
-              <h3>Auto e Furgoni</h3>
-              <p>
-                Manutenzione completa e riparazioni per ogni marca e modello.
-              </p>
-            </div>
-            <div class="card">
-              <i class="fas fa-motorcycle icona-card"></i>
-              <h3>Moto e Scooter</h3>
-              <p>
-                Assistenza specializzata per una guida sicura e performante.
-              </p>
-            </div>
-            <div class="card">
-              <i class="fas fa-mountain icona-card"></i>
-              <h3>MTB e Bici</h3>
-              <p>
-                Prepara la tua mountain bike per ogni avventura con la nostra
-                esperienza.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="punti-forza">
-          <h2>
-            <i class="fas fa-check-circle icona-titolo"></i> Perché scegliere
-            noi?
-          </h2>
-          <ul>
+        <section class="valori-centrati">
+          <ul
+            class="contatti-list"
+            style="
+              justify-content: center;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 30px;
+            "
+          >
             <li>
-              <i class="fas fa-award"></i>
-              <strong>Esperienza Quarantennale:</strong> Conosciamo i segreti
-              dei motori, dai modelli d'epoca ai più recenti.
+              <div class="icon-circle"><i class="fas fa-check"></i></div>
+              <span><strong>Esperienza</strong></span>
             </li>
             <li>
-              <i class="fas fa-tachometer-alt"></i>
-              <strong>Attrezzatura Moderna:</strong> Utilizziamo strumenti di
-              diagnosi di ultima generazione per interventi rapidi e precisi.
+              <div class="icon-circle"><i class="fas fa-microchip"></i></div>
+              <span><strong>Tecnologia</strong></span>
             </li>
             <li>
-              <i class="fas fa-handshake"></i>
-              <strong>Trasparenza Totale:</strong> Ogni riparazione viene
-              spiegata nel dettaglio, con preventivi chiari e senza sorprese.
-            </li>
-            <li>
-              <i class="fas fa-flag-checkered"></i>
-              <strong>Passione Sportiva:</strong> Con il progetto
-              <strong>FrmRacing</strong>, portiamo la competenza tecnica dal
-              banco di prova della strada direttamente alle competizioni.
+              <div class="icon-circle">
+                <i class="fas fa-flag-checkered"></i>
+              </div>
+              <span><strong>Racing</strong></span>
             </li>
           </ul>
         </section>
+      </div>
 
-        <section class="team-section">
-          <h2><i class="fas fa-users icona-titolo"></i> Il Nostro Team</h2>
-          <p>
-            Siamo tecnici specializzati, ma prima di tutto siamo appassionati.
-            Ogni membro del team segue corsi di aggiornamento costanti per
-            garantire che la tua sicurezza non venga meno.
-          </p>
-          <img
-            src="https://via.placeholder.com/800x400?text=Foto+del+Team"
-            alt="Il nostro team di meccanici"
-            class="img-full-width-team"
-          />
-        </section>
+      <h2 class="titolo-servizi-centrato">I Nostri Servizi</h2>
+
+      <div class="servizi-home">
+        <div class="servizio-card">
+          <i class="fas fa-tools"></i>
+          <h3>Riparazione Autovetture</h3>
+          <p>Meccanica professionale.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-wrench"></i>
+          <h3>Tagliando Motore</h3>
+          <p>Manutenzione completa.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-compact-disc"></i>
+          <h3>Gommista</h3>
+          <p>Vendita e montaggio.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-shuttle-van"></i>
+          <h3>Multiveicolo</h3>
+          <p>Furgoni, Moto e MTB.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Centraline</h3>
+          <p>Mappature software.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-car-battery"></i>
+          <h3>Elettrauto</h3>
+          <p>Diagnosi e riparazioni.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-flag-checkered"></i>
+          <h3>Componenti Racing</h3>
+          <p>Kit alta prestazione.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Elaborazioni</h3>
+          <p>Preparazioni sportive.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-wind"></i>
+          <h3>Scarichi Sportivi</h3>
+          <p>Sistemi performanti.</p>
+        </div>
       </div>
     </main>
 
-    <footer>
+    <footer style="text-align: center">
+      <p>
+        Via Torino 43, Olgiate Comasco | Tel: 031 944618 | Cell: 375 6848302
+      </p>
       <p>© 2025 Autofficina Formica – Tutti i diritti riservati</p>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>

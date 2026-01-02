@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autofficina Formica</title>
+    <title>Autofficina Formica - Home</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
 
       <nav id="side-menu" class="nav-menu">
-        <div class="close-btn" onclick="toggleMenu()">&times;</div>
+        <div class="close-btn" onclick="toggleMenu()">×</div>
         <a href="index.html">Home</a>
         <a href="FrmRacing.html">FrmRacing</a>
         <a href="Foto.html">Foto</a>
@@ -23,83 +25,108 @@
         <a href="Recensioni.html">Recensioni</a>
       </nav>
 
-      <img src="img/logo.png" alt="Logo Autofficina Formica" class="logo" />
-      <h1>Autofficina Formica</h1>
+      <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
       <p class="descrizione">
-        Dal 1984 siamo un punto di riferimento per chi cerca competenza,
-        affidabilità e passione nel settore automobilistico.<br />
-        Offriamo servizi di riparazione e manutenzione per auto, furgoni,
-        scooter e MTB.
+        Dal 1984, esperienza qualità e professionalità 🔧 Riparazione auto,
+        furgoni, scooter, MTB.Montaggio e bilanciatura pneumatici.
       </p>
     </header>
 
-    <main class="layout">
-      <section class="contatti" id="contatti">
-        <h2>Contatti</h2>
-        <p class="contatto">
-          <img src="img/mail.png" alt="Email" class="icon" />
-          <a href="mailto:info@autoffinaformica.it">info@autoffinaformica.it</a>
-        </p>
-        <p class="contatto">
-          <img src="img/phone.png" alt="Telefono" class="icon" />
-          <a href="tel:031944618">031 944618</a>
-          &nbsp;–&nbsp;
-          <a href="tel:3756848302">375 6848302</a>
-        </p>
-        <p class="contatto">
-          <img src="img/instagram.png" alt="Instagram" class="icon" />
-          <a
-            href="https://www.instagram.com/autofficina_formica/"
-            target="_blank"
-            >@autofficina_formica</a
-          >
-        </p>
-        <p class="contatto">
-          <img src="img/map.png" alt="Indirizzo" class="icon" />
-          <a
-            href="https://www.google.com/maps?q=Via+Torino,+43,+Olgiate+Comasco+CO"
-            target="_blank"
-            id="dove-siamo"
-          >
-            Via Torino, 43 – Olgiate Comasco (CO)
-          </a>
-        </p>
-        <div class="mappa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.832!2d8.96!3d45.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ2JzQ4LjAiTiA4wrA1NycyNC4wIkU!5e0!3m2!1sit!2sit!4v123456789"
-            width="100%"
-            height="220"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+    <main>
+      <section
+        class="hero"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.8)
+            ),
+            url(img/wallpaper.jpeg);
+        "
+      ></section>
+
+      <section class="servizi-home">
+        <div class="servizio-card">
+          <i class="fas fa-tools"></i>
+          <h3>Meccanica</h3>
+          <p>Riparazioni certificate per ogni tipo di veicolo.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Elettronica</h3>
+          <p>Diagnosi avanzate e rimappature centraline.</p>
+        </div>
+        <div class="servizio-card">
+          <i class="fas fa-flag-checkered"></i>
+          <h3>Racing</h3>
+          <p>Preparazioni sportive e assetti ad alte prestazioni.</p>
         </div>
       </section>
 
-      <section class="orari">
-        <h2>Orari di lavoro</h2>
-        <table>
-          <tr>
-            <th>Giorno</th>
-            <th>Orario</th>
-          </tr>
-          <tr>
-            <td>Lunedì - Venerdì</td>
-            <td>08:00 - 18:00</td>
-          </tr>
-          <tr>
-            <td>Sabato</td>
-            <td>09:00 - 13:00</td>
-          </tr>
-          <tr>
-            <td>Domenica</td>
-            <td>Chiuso</td>
-          </tr>
-        </table>
-      </section>
+      <div class="info-section" id="info">
+        <section class="contatti">
+          <h2>Contatti</h2>
+          <ul class="contatti-list">
+            <li>
+              <div class="icon-circle"><i class="fas fa-phone"></i></div>
+              <a href="tel:031944618 - 3756848302 ">031944618 - 3756848302</a>
+            </li>
+            <li>
+              <div class="icon-circle"><i class="fab fa-instagram"></i></div>
+              <a
+                href="https://www.instagram.com/autofficina_formica/"
+                target="_blank"
+                >@autofficina_formica</a
+              >
+            </li>
+            <li>
+              <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+              <a href="mailto:info@autoffinaformica.it"
+                >info@autoffinaformica.it</a
+              >
+            </li>
+            <li>
+              <div class="icon-circle">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <a href="https://goo.gl/maps/xyz" target="_blank"
+                >Via Torino 43, Olgiate C.</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="orari">
+          <h2>Orari</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Giorno</th>
+                <th>Orario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lun - Ven</td>
+                <td>08:00 - 18:00</td>
+              </tr>
+              <tr>
+                <td>Sabato</td>
+                <td>09:00 - 13:00</td>
+              </tr>
+              <tr>
+                <td>Domenica</td>
+                <td>Chiuso</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer style="text-align: center">
+      <p>
+        Via Torino 43, Olgiate Comasco | Tel: 031 944618 | Cell: 375 6848302
+      </p>
       <p>© 2025 Autofficina Formica – Tutti i diritti riservati</p>
     </footer>
 
