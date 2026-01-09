@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foto - Autofficina Formica</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      /* HERO FOTO */
+      .hero-foto {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url("img/wallpaper.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .hero-foto h1 {
+        color: #fff; /* bianco */
+        font-size: 3rem;
+        font-weight: 1000;
+        text-transform: uppercase;
+      }
+
+      .hero-foto p {
+        color: #f1c40f; /* giallo come altre pagine */
+        font-weight: bold;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      /* GALLERIA */
+      .gallery-container {
+        max-width: 1000px;
+        margin: 60px auto;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .gallery-title {
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #f1c40f; /* giallo come titoli */
+      }
+
+      .gallery-description {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        color: #fff; /* bianco come testi hero */
+      }
+
+      .gallery-description a {
+        color: #f1c40f; /* giallo link */
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 foto per riga */
+        gap: 20px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-toggle" id="menu-btn" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav id="side-menu" class="nav-menu">
+        <div class="close-btn" onclick="toggleMenu()">×</div>
+        <a href="index.html">Home</a>
+        <a href="FrmRacing.html">FrmRacing</a>
+        <a href="Foto.html">Foto</a>
+        <a href="ChiSiamo.html">Chi Siamo</a>
+        <a href="Recensioni.html">Recensioni</a>
+      </nav>
+
+      <img src="img/logo2.png" alt="Logo Autofficina Formica" class="logo" />
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero-foto reveal">
+        <div>
+          <h1>La Nostra Officina</h1>
+          <p>Passione, Precisione e Competenza</p>
+        </div>
+      </section>
+
+      <!-- GALLERIA -->
+      <div class="gallery-container reveal">
+        <h2 class="gallery-title">Lavori in Officina</h2>
+        <p class="gallery-description">
+          Alcuni dei nostri lavori più recenti 🔧🚗. <br />
+          Se volete vedere di più,date un'occhiata al nostro
+          <a
+            href="https://www.instagram.com/autofficina_formica/"
+            target="_blank"
+            >profilo Instagram 📸</a
+          >!
+        </p>
+
+        <section class="gallery">
+          <img src="img/Officina/nsx.jpg" alt="Lavoro in officina 1" />
+          <img src="img/Officina/golf.jpg" alt="Lavoro in officina 2" />
+          <img src="img/Officina/swift.jpg" alt="Lavoro in officina 3" />
+          <img src="img/Officina/abarth-alfa.jpeg" alt="Lavoro in officina 4" />
+          <img src="img/Officina/audis1.jpg" alt="Lavoro in officina 5" />
+          <img src="img/Officina/cliors.jpg" alt="Lavoro in officina 6" />
+        </section>
+      </div>
+    </main>
+
+    <footer style="text-align: center">
+      <p>
+        Via Torino 43, Olgiate Comasco | Tel: 031 944618 | Cell: 375 6848302
+      </p>
+      <p>© 2025 Autofficina Formica – Tutti i diritti riservati</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
