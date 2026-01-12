@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <style>
-      /* Esempio CSS per Hero */
+      /* Stili specifici per la Hero di questa pagina */
       .hero-chisiamo {
         height: 60vh;
         display: flex;
@@ -21,7 +21,7 @@
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.8)
           ),
-          url("img/wallpaper.jpeg"); /* percorso relativo a HTML */
+          url("img/wallpaper.jpeg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -33,10 +33,12 @@
         font-weight: 900;
         text-transform: uppercase;
         margin-bottom: 10px;
+        border-left: none; /* Rimuove bordo giallo solo nella hero */
+        padding-left: 0;
       }
 
       .hero-chisiamo p {
-        color: #f1c40f; /* variabile primaria */
+        color: #f1c40f;
         font-weight: bold;
         font-size: 1.2rem;
         text-transform: uppercase;
@@ -62,7 +64,6 @@
     </header>
 
     <main>
-      <!-- HERO -->
       <section class="hero-chisiamo reveal">
         <div class="hero-content-chisiamo">
           <h1>CHI SIAMO</h1>
@@ -70,7 +71,6 @@
         </div>
       </section>
 
-      <!-- STORIA -->
       <div class="info-section-full reveal">
         <section class="storia-centrata">
           <h2>La Nostra Storia</h2>
@@ -86,7 +86,6 @@
           </p>
         </section>
 
-        <!-- VALORI -->
         <section class="valori-centrati">
           <ul
             class="contatti-list"
@@ -115,55 +114,95 @@
         </section>
       </div>
 
-      <!-- SERVIZI -->
-      <h2 class="titolo-servizi-centrato">I Nostri Servizi</h2>
-      <div class="servizi-home reveal">
-        <div class="servizio-card">
-          <i class="fas fa-tools"></i>
-          <h3>Riparazione Autovetture</h3>
-          <p>Meccanica professionale.</p>
+      <section class="macchinari-section reveal">
+        <h2>I Nostri Servizi</h2>
+        <div class="servizi-home">
+          <div class="servizio-card">
+            <i class="fas fa-tools"></i>
+            <h3>Riparazione Autovetture</h3>
+            <p>Meccanica professionale.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-wrench"></i>
+            <h3>Tagliando Motore</h3>
+            <p>Manutenzione completa.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-compact-disc"></i>
+            <h3>Gommista</h3>
+            <p>Vendita e montaggio.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-shuttle-van"></i>
+            <h3>Multiveicolo</h3>
+            <p>Furgoni, Moto e MTB.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Centraline</h3>
+            <p>Mappature software.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-car-battery"></i>
+            <h3>Elettrauto</h3>
+            <p>Diagnosi e riparazioni.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-flag-checkered"></i>
+            <h3>Componenti Racing</h3>
+            <p>Kit alta prestazione.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-tachometer-alt"></i>
+            <h3>Elaborazioni</h3>
+            <p>Preparazioni sportive.</p>
+          </div>
+          <div class="servizio-card">
+            <i class="fas fa-wind"></i>
+            <h3>Scarichi Sportivi</h3>
+            <p>Sistemi performanti.</p>
+          </div>
         </div>
-        <div class="servizio-card">
-          <i class="fas fa-wrench"></i>
-          <h3>Tagliando Motore</h3>
-          <p>Manutenzione completa.</p>
+      </section>
+
+      <section class="macchinari-section reveal">
+        <h2>I Nostri Macchinari</h2>
+        <p class="macchinari-intro">
+          L’Autofficina Formica investe costantemente in
+          <strong>attrezzature moderne e professionali</strong> per garantire
+          interventi precisi, sicuri e rapidi. Utilizziamo macchinari di ultima
+          generazione che ci permettono di operare su veicoli di ogni categoria,
+          dalle auto stradali fino alle applicazioni sportive e racing.
+        </p>
+
+        <div class="macchinari-grid">
+          <div class="macchinario-card">
+            <img
+              src="img/Servizi/smontagomme.jpeg"
+              alt="Smontagomme professionale"
+            />
+            <h3>Smontagomme Professionale</h3>
+            <p>
+              Smontagomme ad alte prestazioni, progettato per operare anche su
+              <strong>pneumatici Run Flat</strong> e a profilo ribassato.<br />
+              Supporta cerchi da 10 a 24 pollici.
+            </p>
+          </div>
+
+          <div class="macchinario-card">
+            <img
+              src="img/Servizi/bilanciamentogomme.jpeg"
+              alt="Bilanciatrice digitale automatica"
+            />
+            <h3>Bilanciatrice Digitale Automatica</h3>
+            <p>
+              Bilanciatrice elettronica di ultima generazione con
+              <strong>rilevamento automatico dei parametri</strong>. <br />
+              Consente la bilanciatura precisa dei cerchi.
+            </p>
+          </div>
         </div>
-        <div class="servizio-card">
-          <i class="fas fa-compact-disc"></i>
-          <h3>Gommista</h3>
-          <p>Vendita e montaggio.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-shuttle-van"></i>
-          <h3>Multiveicolo</h3>
-          <p>Furgoni, Moto e MTB.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-laptop-code"></i>
-          <h3>Centraline</h3>
-          <p>Mappature software.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-car-battery"></i>
-          <h3>Elettrauto</h3>
-          <p>Diagnosi e riparazioni.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-flag-checkered"></i>
-          <h3>Componenti Racing</h3>
-          <p>Kit alta prestazione.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-tachometer-alt"></i>
-          <h3>Elaborazioni</h3>
-          <p>Preparazioni sportive.</p>
-        </div>
-        <div class="servizio-card">
-          <i class="fas fa-wind"></i>
-          <h3>Scarichi Sportivi</h3>
-          <p>Sistemi performanti.</p>
-        </div>
-      </div>
+      </section>
     </main>
 
     <footer style="text-align: center">
