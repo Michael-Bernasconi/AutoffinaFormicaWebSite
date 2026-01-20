@@ -56,7 +56,7 @@ header h1 {
 
 .menu-toggle {
   position: absolute;
-  top: 35px;
+  top: 25px;
   right: 25px;
   cursor: pointer;
   z-index: 1001;
@@ -100,6 +100,7 @@ header h1 {
    3. HERO & CARDS
    ========================================================================== */
 .hero {
+  position: relative; /* Fondamentale: i figli assoluti si riferiscono a questo contenitore */
   height: 450px; /* Ridotto da 600px */
   background-size: cover;
   background-position: center;
@@ -250,8 +251,8 @@ footer {
 
 /* Logo fisso in alto a sinistra */
 .logo {
-  position: fixed; /* Lo fissa alla finestra */
-  top: 10px; /* distanza dal bordo superiore */
+  position: absolute; /* Lo fissa alla finestra */
+  top: 70px; /* distanza dal bordo superiore */
   left: 10px; /* distanza dal bordo sinistro */
   width: 250px; /* puoi regolare la dimensione */
   height: auto;

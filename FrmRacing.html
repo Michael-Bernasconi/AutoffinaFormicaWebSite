@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
@@ -30,15 +30,19 @@
       }
 
       header {
-        padding: 20px;
-        text-align: center;
+        background: #0e0e0e;
+        padding: 30px 20px; /* IDENTICO all'index */
         border-bottom: 3px solid #f1c40f;
         position: relative;
       }
 
       .logo {
-        width: 200px;
-        margin-bottom: 15px;
+        position: absolute;
+        top: 60px; /* identico all'index */
+        left: 10px;
+        width: 250px;
+        height: auto;
+        z-index: 1000;
       }
 
       .menu-toggle {
@@ -83,15 +87,13 @@
 
       /* HERO */
       .hero-frmracing {
-        height: 60vh;
+        height: 450px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.8)
-          ),
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
           url("img/wallpaper.jpeg");
         background-size: cover;
         background-position: center;
